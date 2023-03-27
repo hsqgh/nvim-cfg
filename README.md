@@ -10,7 +10,7 @@ You can check out his Neovim config [here](https://github.com/ThePrimeagen/init.
 
 #### Installation
 1. Install Packer
-2. Clone the repo in your ~/.config/
-3. Rename the cloned folder to "nvim"
+2. Clone the repo in your `~/.config/`
+3. Rename the cloned folder to `nvim` (`mv nvim-cfg nvim`)
 4. Neovim into `~/.config/nvim/lua/hsq/packer.lua`
 5. Run `:PackerSync` command
