@@ -5,10 +5,10 @@ return {
         config = function()
             require("nvim-treesitter.configs").setup({
                 -- A list of parser names, or "all"
-                ensure_installed = {
-                    "vimdoc", "javascript", "typescript", "c", "cpp", "lua", "rust",
-                    "jsdoc", "bash", "html", "php", "go", "css", "python", "cmake", "java"
-                },
+                --ensure_installed = {
+                --    "vimdoc", "javascript", "typescript", "c", "cpp", "lua",
+                --    "bash", "html", "php", "go", "css", "python",
+                --},
 
                 -- Install parsers synchronously (only applied to `ensure_installed`)
                 sync_install = false,
@@ -65,7 +65,7 @@ return {
 
     {
         "nvim-treesitter/nvim-treesitter-context",
-        after = "nvim-treesitter",
+        dependencies = { "nvim-treesitter/nvim-treesitter" },
         config = function()
             require'treesitter-context'.setup{
                 enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
